@@ -7,4 +7,6 @@ fn main() {
     let name = "VS Code Remote - Containers";
     println!("Hello, {}!", name);
     println!("Hello, again, 2!");
+
+    println!("Hello world 2");
 }
