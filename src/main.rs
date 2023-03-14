@@ -4,6 +4,11 @@
  *-------------------------------------------------------------------------------------------------------------*/
 
 fn main() {
+    let vars = std::env::vars()
+        .into_iter()
+        .map(|it| format!("{} = {}", it.0, it.1))
+        .collect::<Vec<_>>();
+    dbg!(vars);
     let name = "VS Code Remote - Containers";
     println!("Hello, {}!", name);
     println!("Hello, again, 2!");
